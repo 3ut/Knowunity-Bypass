@@ -1,5 +1,5 @@
 ## Knowunity Bypass
-This tool will download images and save them as PDF
+This tool will download images and save them as PDF, make sure to put the correct URL 
 
 
 ## Installation
