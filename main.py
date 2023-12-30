@@ -77,8 +77,10 @@ class KnowunityClient:
             for content in contents:
                 print(f"[!] Contents: [{content['imageUrl']}]")
                 self._images.append(content['imageUrl'])
-
-            self.convert_webp_to_pdf(output_pdf_path='output.pdf')
+            try:
+                self.convert_webp_to_pdf(output_pdf_path='output.pdf')
+            except:
+                print("[!] Failed to create a PDF.")
         else:
             print("[!] Script tag not found.")
 
